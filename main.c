@@ -162,10 +162,10 @@ int fd_close(int fd)
     return close(fd);
 }
 
-int main(int argc, char **argv, char **envp)
+int main(int argc, char **argv)
 {
 
-    const int gpios[] = { 71, 70, 73, 72, 75, 74 };
+    const int gpios[] = { 47, 46, 27, 65, 22, 61 };
     const int n_gpios = sizeof(gpios)/sizeof(gpios[0]);
 
     int fds[n_gpios];
